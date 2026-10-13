@@ -45,7 +45,7 @@ export default function Services() {
     <section className="services-section">
       <div className="container">
 
-        <div className="services-heading text-center">
+        <div className="services-heading text-center" data-aos="fade-up">
           <span className="services-subtitle">
             OUR SERVICES
           </span>
@@ -64,16 +64,15 @@ export default function Services() {
 
         <div className="row g-4">
 
-          {services.map((service) => (
+          {services.map((service, index) => (
             <div
               className="col-md-6 col-lg-4"
               key={service.title}
+              data-aos="fade-up"
+              data-aos-delay={index * 150}
             >
               <div className="service-card">
-
-                <div className="service-icon">
-                  +
-                </div>
+                <div className="service-icon">+</div>
 
                 <h3>{service.title}</h3>
 
@@ -82,7 +81,6 @@ export default function Services() {
                 <Link href={service.link}>
                   Learn More →
                 </Link>
-
               </div>
             </div>
           ))}

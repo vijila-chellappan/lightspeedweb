@@ -1,7 +1,9 @@
+
 import type { Metadata } from "next";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./globals.css";
 import Header from "../components/Header";
+import Footer from "../components/footer/Footer";
 
 export const metadata: Metadata = {
   title: "Light Speed Web",
@@ -45,6 +47,7 @@ export default function RootLayout({
       <body>
         <Header />
         {children}
+        <Footer />
       </body>
     </html>
   );
