@@ -44,7 +44,13 @@ export default function Header() {
               </Link>
             </li>
 
-            {/* About Us Dropdown */}
+            <li>
+              <Link href="/our-company" onClick={closeMenu}>
+                About Us
+              </Link>
+            </li>
+           
+            {/* Our Work Dropdown */}
             <li
               className={`header-dropdown ${aboutOpen ? "dropdown-open" : ""} ${
                 isAboutActive ? "active" : ""
@@ -54,13 +60,13 @@ export default function Header() {
             >
               <div className="header-dropdown-heading">
                 <Link
-                  href="/our-company"
+                  href="/our-work"
                   onClick={closeMenu}
                   aria-current={
-                    pathname === "/our-company" ? "page" : undefined
+                    pathname === "/our-work" ? "page" : undefined
                   }
                 >
-                  About Us
+                  Our Works
                 </Link>
 
                 <button
@@ -77,40 +83,30 @@ export default function Header() {
               <ul className="header-submenu">
                 <li>
                   <Link
-                    href="/our-company"
+                    href="/our-work"
                     onClick={closeMenu}
                     aria-current={
-                      pathname === "/our-company" ? "page" : undefined
+                      pathname === "/our-work" ? "page" : undefined
                     }
                   >
                     <i className="bi bi-buildings" />
-                    Our Company
+                    Our Websites
                   </Link>
                 </li>
 
                 <li>
                   <Link
-                    href="/team"
+                    href="/our-videos"
                     onClick={closeMenu}
                     aria-current={
-                      pathname === "/team" ? "page" : undefined
+                      pathname === "/our-videos" ? "page" : undefined
                     }
                   >
                     <i className="bi bi-people" />
-                    Team
+                    Our Videos
                   </Link>
                 </li>
               </ul>
-            </li>
-            <li>
-              <Link href="/our-company" onClick={closeMenu}>
-                About Us
-              </Link>
-            </li>
-            <li>
-              <Link href="/our-work" onClick={closeMenu}>
-                Our Work
-              </Link>
             </li>
 
             <li>

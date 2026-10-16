@@ -1,0 +1,147 @@
+
+.admin-login-page {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  padding: 32px 16px;
+  background: linear-gradient(135deg, #202d45, #101827);
+  font-family: Arial, sans-serif;
+}
+
+.admin-login-card {
+  width: 100%;
+  max-width: 460px;
+  padding: 44px 40px;
+  border-radius: 22px;
+  background: #f8f9fb;
+  color: #14223b;
+  box-sizing: border-box;
+}
+
+.admin-brand {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 58px;
+}
+
+.admin-brand-icon {
+  display: grid;
+  place-items: center;
+  width: 48px;
+  height: 48px;
+  border-radius: 13px;
+  background: linear-gradient(135deg, #6e8de8, #a5dce2);
+  color: #10213c;
+  font-weight: 800;
+}
+
+.admin-brand-name {
+  font-size: 14px;
+  letter-spacing: 1px;
+}
+
+.admin-brand small {
+  display: block;
+  margin-top: 8px;
+  color: #71809a;
+  font-size: 9px;
+  letter-spacing: 2px;
+}
+
+.admin-login-heading {
+  margin-bottom: 32px;
+  text-align: center;
+}
+
+.admin-login-heading > span {
+  color: #5c80e7;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.admin-login-heading h1 {
+  margin: 18px 0 10px;
+  font-size: 32px;
+  font-weight: 500;
+}
+
+.admin-login-heading p {
+  color: #71809a;
+  font-size: 14px;
+}
+
+.admin-login-card label {
+  display: block;
+  margin: 22px 0 10px;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.admin-login-card input {
+  width: 100%;
+  padding: 14px;
+  border: 1px solid #d8dfeb;
+  border-radius: 9px;
+  background: white;
+  box-sizing: border-box;
+  font-size: 14px;
+}
+
+.admin-login-card input:focus {
+  outline: 2px solid #8ba8ff;
+  outline-offset: 1px;
+}
+
+.admin-login-card button {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 25px;
+  padding: 16px;
+  border: 0;
+  border-radius: 9px;
+  background: linear-gradient(100deg, #7190e8, #a4dce2);
+  color: #10213c;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.admin-login-card button:disabled {
+  opacity: 0.7;
+  cursor: wait;
+}
+
+.admin-login-error {
+  margin-top: 14px;
+  color: #bd2637;
+  font-size: 13px;
+}
+
+.admin-login-card footer {
+  margin-top: 34px;
+  color: #7a879b;
+  font-size: 11px;
+  text-align: center;
+}
+
+@media (max-width: 480px) {
+  .admin-login-card {
+    padding: 32px 24px;
+  }
+}
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.admin-login-page {
+  min-height: 100vh;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}

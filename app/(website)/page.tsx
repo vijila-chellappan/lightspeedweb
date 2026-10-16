@@ -1,5 +1,5 @@
-import Hero from "../components/Hero";
-import Services from "../components/home/Services";
+import Hero from "../../components/Hero";
+import Services from "../../components/home/Services";
 
 export default function Home() {
   return (

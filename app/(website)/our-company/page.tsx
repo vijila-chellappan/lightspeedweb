@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import OurCompany from "../../components/company/OurCompany";
+import OurCompany from "../../../components/company/OurCompany";
 
 export const metadata: Metadata = {
   title: "Our Company | Light Speed Web",
